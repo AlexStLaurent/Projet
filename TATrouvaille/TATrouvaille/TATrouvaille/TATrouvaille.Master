@@ -1,0 +1,199 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TATrouvaille.master.cs" Inherits="TATrouvaille.TATrouvaille" %>
+
+
+
+
+<!DOCTYPE html>
+
+
+
+
+<html>
+<head runat="server">
+<meta http-equiv="X-UA-Compatible" content="text/html; charset=utf-8"/>
+    <title>T.A. Trouvaille</title>
+    <style>
+        body {
+            background-image: url(http://3.imimg.com/data3/YF/TN/MY-3617268/untitled-2-500x500.jpg)
+}
+
+
+
+
+.h1{
+    font-weight: bolder;
+}
+.h4{
+    font-weight: bolder;
+}
+
+
+
+.row{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.Text{
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+
+footer{
+      
+     padding-top:5px;
+    background-color: black;
+    border: 1px solid mediumseagreen ;
+    color: white;
+    padding-left: 160px;
+}
+/*Cette section de code à été trouver sur:  https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+
+
+.footer,
+.push {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+ /*          */
+ form {
+    padding-left: 160px;
+}
+nav{
+     padding-top:5px;
+    background-color: darkblue;
+    border: 1px solid #ffae42;
+    color: white;
+    position: sticky;
+    top : 0;
+}
+
+.hover:hover{
+   background-color:aqua;
+   overflow:hidden;
+}
+
+.colh{
+    height:100%;
+    text-align:center;
+}
+
+.container{
+     margin-bottom: 15px;
+     padding-top:5px;
+    padding-bottom: 5px;
+    
+}
+
+.hover{
+
+}
+
+.sidenav{
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    background-color: orange;
+}
+
+.block-link {
+    display:block;
+}
+
+
+    </style>    <link target=_blank href="css/bootstrap.min.css" rel="stylesheet" />
+   
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/popper-utils.min.js"></script>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="wrapper">
+     <nav class="nav" id="nav">
+         <div class="row">
+             <div class="col-md-1">
+                 <a>             
+                     <img src="Image/TATrouvaille.jpg" width="155" height="100" />    
+                 </a>
+                     
+                 
+             </div>
+      
+                <a class="col-md-1 block-link colh" href="Accueil.aspx">
+                    <div class="hover">
+                    Accueil    
+                    </div>
+                </a>
+                <a class="col-md-1 block-link colh" href="Connexion.aspx">
+                    <div class="hover">
+                    Administration
+                        </div>
+                </a>
+                <a class="col-md-1 block-link colh" href="RechercheLivre.aspx">
+                  <div class="hover">
+                    Recherche 
+                      </div>
+                </a>       
+             <a class="col-md-1 block-link colh" href="LivreChercher.aspx">
+                 <div class="hover">
+                 Nous recherchons
+                     </div>
+             </a>
+
+
+
+            </div>
+
+
+
+
+    </nav>
+
+
+
+
+        <div class="sidenav">
+
+
+
+
+
+
+
+
+        </div>
+    <form id="form1" runat="server">
+        <div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script src="bootstrap/js/bootstrap.min.js"></script>
+            <asp:ContentPlaceHolder ID="Form" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+        <div class="push">
+            <footer class="footer">
+                 <div class="row">
+                  
+            <div class="col-md-2">Heure d'ouverture :  9 h 00 à 15 h 00.</div>
+
+            <div class="col-md-2"> Ouvert les : Lundi au Vendredi.</div>
+
+            <div class="col-md-3">Adresse: 333, Boul. Cité-des-Jeunes, J8Y 6M4.</div>
+
+            <div class="col-md-3"> Retrouvez-nous au : deuxième étage, dans la section verte.</div>
+
+                 </div>
+            </footer>
+         </div>
+    </div>
+</body>
+</html>
