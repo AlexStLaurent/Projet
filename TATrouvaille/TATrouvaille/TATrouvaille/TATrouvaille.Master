@@ -72,13 +72,14 @@ nav{
 }
 
 .hover:hover{
-   background-color:aqua;
+   background-color:forestgreen;
    overflow:hidden;
 }
 
 .colh{
     height:100%;
     text-align:center;
+    padding-top: 40px;
 }
 
 .container{
@@ -89,7 +90,7 @@ nav{
 }
 
 .hover{
-
+    color:whitesmoke
 }
 
 .sidenav{
@@ -109,7 +110,7 @@ nav{
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/popper-utils.min.js"></script>
     <script src="Scripts/jquery-3.0.0.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 

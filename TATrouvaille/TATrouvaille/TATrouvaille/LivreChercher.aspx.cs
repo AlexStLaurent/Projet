@@ -18,7 +18,7 @@ namespace TATrouvaille
             SqlCommand cmd = new SqlCommand("SELECT Titre, Auteur FROM LivreRechercher", con);
             con.Open();
             cmd.Connection = con;
-            SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            SqlDataReader reader = cmd.ExecuteReader(); 
             grvChercher.DataSource = reader; 
             grvChercher.DataBind();
             reader.Close();
