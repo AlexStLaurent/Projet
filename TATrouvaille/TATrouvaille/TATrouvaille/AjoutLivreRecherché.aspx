@@ -20,7 +20,7 @@
             </div>
         </div>
     <div class="row">
-        <div class="col-md-1"><asp:Button ID="BtnAjout" runat="server" Text="Ajouter" PostBackUrl="~/Administration.aspx"/></div>
+        <div class="col-md-1"><asp:Button ID="BtnAjout" runat="server" Text="Ajouter" PostBackUrl="~/Administration.aspx" OnClick="BtnAjout_Click"/></div>
     </div>
         </div>
         

@@ -23,12 +23,12 @@ Auteur varchar(50)
 CREATE TABLE Reservation(
 ReservID int PRIMARY KEY IDENTITY,
 IDLivre INT FOREIGN KEY REFERENCES Inventaire,
+Titre varchar(50),
 Nom varchar(40),
 Prenom varchar(40),
 NumEtudiant varchar(7),
 DateRéservation Date,
-DateFinReserv Date,
-EstParti bit
+DateFinReserv Date
 )
 
 

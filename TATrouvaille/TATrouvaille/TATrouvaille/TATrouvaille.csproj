@@ -116,6 +116,7 @@
     <Content Include="css\bootstrap-reboot.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="GestionRéservation.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Image\TATrouvaille.jpg" />
     <Content Include="js\bootstrap.bundle.js" />
@@ -123,7 +124,6 @@
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="LivreChercher.aspx" />
-    <Content Include="ResultatRecherche.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -188,6 +188,13 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="GestionRéservation.aspx.cs">
+      <DependentUpon>GestionRéservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionRéservation.aspx.designer.cs">
+      <DependentUpon>GestionRéservation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -199,13 +206,6 @@
       <DependentUpon>LivreChercher.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResultatRecherche.aspx.cs">
-      <DependentUpon>ResultatRecherche.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ResultatRecherche.aspx.designer.cs">
-      <DependentUpon>ResultatRecherche.aspx</DependentUpon>
-    </Compile>
     <Compile Include="TATrouvaille.Master.cs">
       <DependentUpon>TATrouvaille.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

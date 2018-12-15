@@ -10,15 +10,15 @@
 namespace TATrouvaille {
     
     
-    public partial class ResultatRecherche {
+    public partial class GestionRéservation {
         
         /// <summary>
-        /// Contrôle grvResultat.
+        /// Contrôle gdvGestion.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grvResultat;
+        protected global::System.Web.UI.WebControls.GridView gdvGestion;
     }
 }

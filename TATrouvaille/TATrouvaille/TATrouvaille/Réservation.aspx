@@ -36,7 +36,7 @@
         </div>
         <div class="row">
             <div class="col-md-1">
-                <asp:Button ID="BtnValider" runat="server" Text="Valider" PostBackUrl="~/Accueil.aspx" />
+                <asp:Button ID="BtnValider" runat="server" Text="Valider" PostBackUrl="~/Accueil.aspx" OnClick="BtnValider_Click" />
             </div>
         </div>
 
