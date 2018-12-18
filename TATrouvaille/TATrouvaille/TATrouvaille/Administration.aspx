@@ -67,7 +67,7 @@
 
                     <div class="row">
                         <div class="col-md-1">
-                            <asp:Button ID="btnGestionListe" runat="server" Text="Gérer la liste rechercher" PostBackUrl="~/GestionListe.aspx" Width="200px" />
+                            <asp:Button ID="btnGestionListe" runat="server" Text="Gérer la liste de recherche" PostBackUrl="~/GestionListe.aspx" Width="200px" />
                         </div>
                     </div>
 
