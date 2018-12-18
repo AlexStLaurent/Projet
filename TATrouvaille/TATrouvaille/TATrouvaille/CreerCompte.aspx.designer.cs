@@ -13,31 +13,13 @@ namespace TATrouvaille {
     public partial class CreerCompte {
         
         /// <summary>
-        /// Contrôle TxtUser.
+        /// Contrôle Txtuser.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtUser;
-        
-        /// <summary>
-        /// Contrôle RequiredUser.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredUser;
-        
-        /// <summary>
-        /// Contrôle RegularUser.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularUser;
+        protected global::System.Web.UI.WebControls.TextBox Txtuser;
         
         /// <summary>
         /// Contrôle TxtPass.
@@ -49,24 +31,6 @@ namespace TATrouvaille {
         protected global::System.Web.UI.WebControls.TextBox TxtPass;
         
         /// <summary>
-        /// Contrôle RequiredPass.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredPass;
-        
-        /// <summary>
-        /// Contrôle RegularPass.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularPass;
-        
-        /// <summary>
         /// Contrôle TxtRePass.
         /// </summary>
         /// <remarks>
@@ -74,24 +38,6 @@ namespace TATrouvaille {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtRePass;
-        
-        /// <summary>
-        /// Contrôle RequiredRePass.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredRePass;
-        
-        /// <summary>
-        /// Contrôle ComparePass.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator ComparePass;
         
         /// <summary>
         /// Contrôle BtnCreer.

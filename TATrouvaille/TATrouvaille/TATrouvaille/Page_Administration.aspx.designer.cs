@@ -22,15 +22,6 @@ namespace TATrouvaille {
         protected global::System.Web.UI.WebControls.TextBox TxtTitre;
         
         /// <summary>
-        /// Contrôle RequiredTitre.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredTitre;
-        
-        /// <summary>
         /// Contrôle TxtAuteur.
         /// </summary>
         /// <remarks>
@@ -40,15 +31,6 @@ namespace TATrouvaille {
         protected global::System.Web.UI.WebControls.TextBox TxtAuteur;
         
         /// <summary>
-        /// Contrôle RequiredAuteur.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredAuteur;
-        
-        /// <summary>
         /// Contrôle TxtPrix.
         /// </summary>
         /// <remarks>
@@ -56,24 +38,6 @@ namespace TATrouvaille {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtPrix;
-        
-        /// <summary>
-        /// Contrôle RequiredPrix.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredPrix;
-        
-        /// <summary>
-        /// Contrôle RegularPrix.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularPrix;
         
         /// <summary>
         /// Contrôle RadioNeuf.
