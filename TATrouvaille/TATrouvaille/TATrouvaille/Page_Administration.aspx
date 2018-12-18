@@ -32,7 +32,7 @@
         </div>
         <div class="row"><div class="col-md-1"></div><div class="col-md-1"><asp:RadioButton ID="RadioUsagé" runat="server" Text="Usagé" GroupName="Etat"/></div></div>
     <div class="row">
-        <div class="col-md-1"><asp:Button ID="BtnValider" runat="server" Text="Valider" PostBackUrl="~/Administration.aspx"  /></div>
+        <div class="col-md-1"><asp:Button ID="BtnValider" runat="server" Text="Valider"  OnClick="BtnValider_Click"  /></div>
     </div>
         </div>
         
