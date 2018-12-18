@@ -117,8 +117,8 @@
                     <%-- ########################## --%>
                     <%-- ROW POUR LE TITRE DU LIVRE --%>
                     <div class="row">
-                        <div class="col-md-3">Titre:</div>
-                        <div class="col-md-1">
+                        <div class="col-md-4">Titre:</div>
+                        <div class="col-md-8">
                             <asp:Label ID="LblLivre" runat="server" Text="PlaceHolder"></asp:Label>
                         </div>
                     </div>
@@ -130,8 +130,8 @@
                     <%-- ########################### --%>
                     <%-- ROW POUR LE NOM DE L'AUTEUR --%>
                     <div class="row">
-                        <div class="col-md-3">Nom de l'auteur:</div>
-                        <div class="col-md-1">
+                        <div class="col-md-4">Nom de l'auteur:</div>
+                        <div class="col-md-8">
                             <asp:Label ID="LblAuteur" runat="server" Text="PlaceHolder"></asp:Label>
                         </div>
                     </div>
@@ -143,8 +143,8 @@
                     <%-- ######################### --%>
                     <%-- ROW POUR LE PRIX DU LIVRE --%>
                     <div class="row">
-                        <div class="col-md-3">Prix:</div>
-                        <div class="col-md-1">
+                        <div class="col-md-4">Prix:</div>
+                        <div class="col-md-8">
                             <asp:Label ID="LblPrix" runat="server" Text="PlaceHolder"></asp:Label>
                         </div>
                     </div>

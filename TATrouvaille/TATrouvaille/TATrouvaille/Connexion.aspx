@@ -60,7 +60,7 @@
                     <%-- ROW POUR LE BOUTTON DE CONNEXION --%>
                     <div class="row">
                         <div class="col-md-1">
-                            <asp:Button ID="BtnConnexion" runat="server" Text="Connection" OnClick="BtnConnexion_Click" />
+                            <asp:Button ID="BtnConnexion" runat="server" Text="Connexion" OnClick="BtnConnexion_Click" />
                         </div>
                     </div>
                     <%-- ROW POUR LE BOUTTON DE CONNEXION --%>

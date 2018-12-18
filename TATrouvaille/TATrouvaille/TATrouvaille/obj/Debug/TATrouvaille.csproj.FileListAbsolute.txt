@@ -762,9 +762,7 @@ C:\Users\info1\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\bi
 C:\Users\info1\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\bin\fr\System.Net.Http.Formatting.resources.dll
 C:\Users\info1\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\bin\fr\System.Web.Http.resources.dll
 C:\Users\info1\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\bin\fr\System.Web.Http.WebHost.resources.dll
-C:\Users\info1\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.csprojAssemblyReference.cache
 C:\Users\info1\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.csproj.CoreCompileInputs.cache
-C:\Users\info1\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.csproj.CopyComplete
 C:\Users\info1\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.dll
 C:\Users\info1\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.pdb
 C:\Users\ToTo\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\bin\TATrouvaille.dll.config
@@ -852,3 +850,4 @@ C:\Users\ToTo\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj
 C:\Users\ToTo\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.csproj.CoreCompileInputs.cache
 C:\Users\ToTo\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.dll
 C:\Users\ToTo\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.pdb
+C:\Users\info1\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.csprojResolveAssemblyReference.cache
