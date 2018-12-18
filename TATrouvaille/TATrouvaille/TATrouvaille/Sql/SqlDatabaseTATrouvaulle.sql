@@ -45,3 +45,7 @@ Insert INTO LivreRechercher VALUES
 INSERT INTO Inventaire VALUES
 ('Comme un Badass', 'Mister Torgue Flexington', 66.66, 0)
 
+USE NORTHWND
+GO
+DROP DATABASE TATrouvaille
+GO

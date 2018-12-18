@@ -11,7 +11,7 @@
             <asp:BoundField HeaderText="Prénom" DataField="Prenom" ReadOnly="true" />
             <asp:BoundField HeaderText="# Étudiant" DataField="NumEtudiant" ReadOnly ="true" />
             <asp:BoundField HeaderText="Échéance" DataField="DateFinReserv" ReadOnly="true" />
-            <asp:ButtonField  CommandName="Update" HeaderText="Annuler Réservation"  ShowHeader="false" Text="Annuler Réservation" />
+            <asp:ButtonField ButtonType="Button"  CommandName="Update" HeaderText="Annuler Réservation"  ShowHeader="false" Text="Annuler Réservation" />
             <asp:ButtonField CommandName="Delete" HeaderText="" CausesValidation="false" ShowHeader="false" Text="Terminer réservation"  />
         </Columns>
     </asp:GridView>
