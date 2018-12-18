@@ -20,8 +20,8 @@ namespace TATrouvaille
 
         protected void BtnAjout_Click(object sender, EventArgs e)
         {
-            titre = TxtTitrerecherche.Text;
-            auteur = TxtAuteurrecherche.Text;
+            titre = TxtTitreRecherche.Text;
+            auteur = TxtAuteurRecherche.Text;
             SqlConnection con = new SqlConnection(@"Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql");
             SqlCommand cmd = new SqlCommand($"INSERT INTO LivreRechercher VALUES ('{titre}', '{auteur}')");
             cmd.Connection.Open();

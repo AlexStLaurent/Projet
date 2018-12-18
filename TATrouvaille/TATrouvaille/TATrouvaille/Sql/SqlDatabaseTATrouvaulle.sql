@@ -37,10 +37,10 @@ INSERT INTO Administrateur VALUES
 ('Admin', 'Admin')
 
 Insert INTO LivreRechercher VALUES
-('Les dix petits nègres', 'Agathe Christie'),
+('Les dix petits nègres', 'Agatha Christie'),
 ('Mein Kampf', 'Adolph Hitler'), 
 ('Tom à la ferme', 'Some guy'),
-('Apprendre le Javascript en 5 étape facile', 'Samir Elouasbi')
+('Apprendre le Javascript en 5 étapes faciles', 'Samir Elouasbi')
 
 INSERT INTO Inventaire VALUES
 ('Comme un Badass', 'Mister Torgue Flexington', 66.66, NULL)

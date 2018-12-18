@@ -13,22 +13,40 @@ namespace TATrouvaille {
     public partial class AjoutLivreRecherché {
         
         /// <summary>
-        /// Contrôle TxtTitrerecherche.
+        /// Contrôle TxtTitreRecherche.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtTitrerecherche;
+        protected global::System.Web.UI.WebControls.TextBox TxtTitreRecherche;
         
         /// <summary>
-        /// Contrôle TxtAuteurrecherche.
+        /// Contrôle RequiredTitre.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtAuteurrecherche;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredTitre;
+        
+        /// <summary>
+        /// Contrôle TxtAuteurRecherche.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtAuteurRecherche;
+        
+        /// <summary>
+        /// Contrôle RequiredAuteur.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredAuteur;
         
         /// <summary>
         /// Contrôle BtnAjout.

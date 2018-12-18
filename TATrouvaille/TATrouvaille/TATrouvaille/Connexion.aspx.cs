@@ -31,7 +31,7 @@ namespace TATrouvaille
         protected void BtnConnexion_Click(object sender, EventArgs e)
         {
             
-                user = Txtuser.Text;
+                user = TxtUser.Text;
                 mdp = TxtPass.Text;
                 con = new SqlConnection("Data Source =.; Initial Catalog = TATrouvaille; User ID = sa; Password = sql");
                 cmd = new SqlCommand($"SELECT Username, MotPasse FROM Administrateur WHERE Username = '{user}' AND MotPasse = '{mdp}'", con);
