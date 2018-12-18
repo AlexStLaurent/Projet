@@ -39,7 +39,7 @@ INSERT INTO Administrateur VALUES
 Insert INTO LivreRechercher VALUES
 ('The Golden Compass', 'Phillip Pullman'),
 ('Harry Potter et la pierre philosophale','J.K. Rowling'), 
-('Tom à la ferme', 'Some guy'),
+('Tom à la ferme', 'Michel Marc Bouchard'),
 ('Apprendre le Javascript en 5 étape facile', 'Samir Elouasbi')
 
 INSERT INTO Inventaire VALUES
