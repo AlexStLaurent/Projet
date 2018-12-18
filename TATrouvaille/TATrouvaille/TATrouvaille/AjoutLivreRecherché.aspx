@@ -9,14 +9,15 @@
         <div class="row">
             <div class="col-md-1">Titre</div>
             <div class="col-md-1">
-                <asp:TextBox ID="TxtTitrerecherche" runat="server"></asp:TextBox>
-
+                <asp:TextBox ID="TxtTitreRecherche" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredTitre" runat="server" ErrorMessage="Le titre est obligatoire" ControlToValidate="TxtTitreRecherche" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
         </div>
         <div class="row">
             <div class="col-md-1">Auteur</div>
             <div class="col-md-1">
-                <asp:TextBox ID="TxtAuteurrecherche" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TxtAuteurRecherche" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredAuteur" runat="server" ErrorMessage="L'auteur est obligatoire" ControlToValidate="TxtAuteurRecherche" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
         </div>
     <div class="row">
@@ -27,6 +28,9 @@
 
 
 </asp:Content>
+
+
+
 
 
 
