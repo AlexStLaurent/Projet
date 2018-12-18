@@ -22,6 +22,8 @@ namespace TATrouvaille
             cmd.Connection.Open();
             cmd.ExecuteNonQuery();
             cmd.Connection.Close();
+            ScriptManager.RegisterClientScriptBlock(this, GetType(), "AlertBox", "Alert('Livre ajouté à l'inventaire avec succès')", true);
+            Response.Redirect("Administration.aspx");
         }
     }
 }

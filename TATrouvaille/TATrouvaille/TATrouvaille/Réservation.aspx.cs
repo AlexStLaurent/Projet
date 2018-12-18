@@ -36,6 +36,7 @@ namespace TATrouvaille
                 cmd.ExecuteNonQuery();
                 cmd.Connection.Close();
                 con.Close();
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Réservation entré avec succès')", true);
                 Response.Redirect("Accueil.aspx");
             }
         }

@@ -19,7 +19,7 @@ namespace TATrouvaille
         {
             if (TxtPass.Text == TxtRePass.Text) {
                 SqlConnection con = new SqlConnection(@"Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql");
-                SqlCommand cmd = new SqlCommand($"INSERT INTO Inventaire VALUES ('{TxtUser.Text}', '{TxtPass}'", con);
+                SqlCommand cmd = new SqlCommand($"INSERT INTO Administrateur VALUES ('{TxtUser.Text}', '{TxtPass.Text}')", con);
                 cmd.Connection.Open();
                 cmd.ExecuteNonQuery();
                 cmd.Connection.Close();

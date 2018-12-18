@@ -56,6 +56,7 @@ namespace TATrouvaille
                     cmd.ExecuteNonQuery();
                     cmd.Connection.Close();
                     con.Close();
+                ScriptManager.RegisterClientScriptBlock(this, GetType(), "AlertBox", "Alert('Réservation annulé avec succès')", true);
                 Response.Redirect("GestionRéservation.aspx");
 
 
@@ -71,6 +72,7 @@ namespace TATrouvaille
                     cmd.ExecuteNonQuery();
                     cmd.Connection.Close();
                     con.Close();
+                ScriptManager.RegisterClientScriptBlock(this, GetType(), "AlertBox", "Alert('Réservation complété avec succès')", true);
                 Response.Redirect("GestionRéservation.aspx");
             }
             }

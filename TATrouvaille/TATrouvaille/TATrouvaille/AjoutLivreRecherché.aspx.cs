@@ -26,6 +26,8 @@ namespace TATrouvaille
             SqlCommand cmd = new SqlCommand($"INSERT INTO LivreRechercher VALUES ('{titre}', '{auteur}')");
             cmd.Connection.Open();
             cmd.ExecuteNonQuery();
+            ScriptManager.RegisterClientScriptBlock(this, GetType(), "AlertBox", "Alert('Livre ajouté à la liste avec succès')", true);
+            Response.Redirect("Administration.aspx");
 
         }
     }
