@@ -19,8 +19,8 @@ namespace TATrouvaille
         protected void Page_Load(object sender, EventArgs e)
         {
             LblLivre.Text = RechercheLivre.TitreLivre;
-            //LblAuteur.Text = RechercheLivre.NomAuteur;
-            //LblPrix.Text = RechercheLivre.Prix;
+            LblAuteur.Text = RechercheLivre.Auteur;
+            LblPrix.Text = Convert.ToString(RechercheLivre.Prix);
         }
 
         protected void BtnValider_Click(object sender, EventArgs e)

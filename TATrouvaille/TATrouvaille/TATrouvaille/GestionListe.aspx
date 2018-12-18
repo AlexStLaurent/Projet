@@ -6,7 +6,7 @@
         <Columns>
             <asp:BoundField HeaderText="Titre du livre" DataField="Titre" ReadOnly="true" />
             <asp:BoundField HeaderText="Auteur" DataField="Auteur" ReadOnly="true" />
-            <asp:ButtonField CommandName="Delete" HeaderText="" CausesValidation="false" ShowHeader="false" Text="Terminer réservation" />
+            <asp:ButtonField CommandName="Delete" HeaderText="" CausesValidation="false" ShowHeader="false" Text="Enlever de la liste" />
         </Columns>
     </asp:GridView>
     <asp:Button ID="txtRetour" runat="server" Text="Retour" PostBackUrl="~/Administration.aspx" />

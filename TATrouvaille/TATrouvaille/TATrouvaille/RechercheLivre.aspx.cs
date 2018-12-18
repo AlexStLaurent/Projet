@@ -39,6 +39,8 @@ namespace TATrouvaille
         protected void grvResultat_SelectedIndexChanged(object sender, EventArgs e)
         {
             Index = Int32.Parse(grvResultat.SelectedRow.Cells[0].Text);
+            Auteur = grvResultat.SelectedRow.Cells[2].Text;
+            Prix = float.Parse(grvResultat.SelectedRow.Cells[3].Text);
             Response.Redirect("Réservation.aspx");
         }
     }
