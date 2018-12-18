@@ -27,7 +27,7 @@ namespace TATrouvaille
             cmd.Connection.Open(); //ouvre la connexion
             cmd.ExecuteNonQuery(); //execute la commande NonQuery
             ScriptManager.RegisterClientScriptBlock(this, GetType(), "AlertBox", "Alert('Livre ajouté à la liste avec succès')", true); 
-            Response.Redirect("Administration.aspx"); //Redirecte à la page administration
+            Response.Redirect("PageGénériqueAdmin.aspx"); //Redirecte à la page administration
 
         }
     }

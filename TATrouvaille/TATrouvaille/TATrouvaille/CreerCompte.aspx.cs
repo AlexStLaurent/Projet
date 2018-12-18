@@ -23,7 +23,7 @@ namespace TATrouvaille
                 cmd.Connection.Open();
                 cmd.ExecuteNonQuery();
                 cmd.Connection.Close();
-                Response.Redirect("Administration.aspx");
+                Response.Redirect("PageGénériqueAdmin.aspx");
             }
         }
     }
