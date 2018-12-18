@@ -20,14 +20,14 @@ namespace TATrouvaille
 
         protected void BtnAjout_Click(object sender, EventArgs e)
         {
-            titre = TxtTitreRecherche.Text;
-            auteur = TxtAuteurRecherche.Text;
-            SqlConnection con = new SqlConnection(@"Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql");
-            SqlCommand cmd = new SqlCommand($"INSERT INTO LivreRechercher VALUES ('{titre}', '{auteur}')");
-            cmd.Connection.Open();
-            cmd.ExecuteNonQuery();
-            ScriptManager.RegisterClientScriptBlock(this, GetType(), "AlertBox", "Alert('Livre ajouté à la liste avec succès')", true);
-            Response.Redirect("Administration.aspx");
+            titre = TxtTitreRecherche.Text; //Assigne le texte de la textbox txtTitreRecherche à la variable titre
+            auteur = TxtAuteurRecherche.Text; //de même avec la variable auteur
+            SqlConnection con = new SqlConnection(@"Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql"); // crée une nouvelle connexion vers la base de donnée (implémenter sur le serveur local)
+            SqlCommand cmd = new SqlCommand($"INSERT INTO LivreRechercher VALUES ('{titre}', '{auteur}')"); //crée une commande SQL pour insérer un livre dans la base de donné
+            cmd.Connection.Open(); //ouvre la connexion
+            cmd.ExecuteNonQuery(); //execute la commande NonQuery
+            ScriptManager.RegisterClientScriptBlock(this, GetType(), "AlertBox", "Alert('Livre ajouté à la liste avec succès')", true); 
+            Response.Redirect("Administration.aspx"); //Redirecte à la page administration
 
         }
     }
