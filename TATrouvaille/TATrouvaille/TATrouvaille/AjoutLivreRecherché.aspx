@@ -8,20 +8,21 @@
         </div>
         <div class="row">
             <div class="col-md-1">Titre</div>
-            <div class="col-md-1">
-                <asp:TextBox ID="TxtTitreRecherche" runat="server"></asp:TextBox>
+            <div class="col-md-5">
+                <asp:TextBox ID="TxtTitreRecherche" runat="server" PlaceHolder="Entrez titre du livre"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredTitre" runat="server" ErrorMessage="Le titre est obligatoire" ControlToValidate="TxtTitreRecherche" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
         </div>
         <div class="row">
             <div class="col-md-1">Auteur</div>
-            <div class="col-md-1">
-                <asp:TextBox ID="TxtAuteurRecherche" runat="server"></asp:TextBox>
+            <div class="col-md-5">
+                <asp:TextBox ID="TxtAuteurRecherche" runat="server" PlaceHolder="Entrez nom de l'auteur"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredAuteur" runat="server" ErrorMessage="L'auteur est obligatoire" ControlToValidate="TxtAuteurRecherche" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
         </div>
     <div class="row">
-        <div class="col-md-1"><asp:Button ID="BtnAjout" runat="server" Text="Ajouter" PostBackUrl="~/Administration.aspx" OnClick="BtnAjout_Click"/></div>
+        <div class="col-md-1"><asp:Button ID="BtnAjout" runat="server" Text="Ajouter" OnClick="BtnAjout_Click"/></div>
+        <div class="col-md-1"><asp:Button ID="BtnQuit" runat="server" Text="Retour" PostBackUrl="~/Administration.aspx" CausesValidation="false"/></div>
     </div>
         </div>
         

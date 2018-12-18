@@ -7,7 +7,7 @@
 
         <div class="Text">    
             <div class="col-md-3"­></div>
-        <div class="col-md-7" style="font-weight: 100; font-size: larger">
+        <div class="col-md-8" style="font-weight: 100; font-size: larger">
             <h3 class="colh">Bienvenue sur le site de TA Trouvaille, le service de vente et rachat de livre usagé</h3>
         </div>
     </div>

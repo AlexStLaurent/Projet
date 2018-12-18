@@ -15,4 +15,5 @@
             <asp:ButtonField CommandName="Delete" HeaderText="" CausesValidation="false" ShowHeader="false" Text="Terminer réservation"  />
         </Columns>
     </asp:GridView>
+    <asp:Button ID="BtnQuit" runat="server" Text="Retour" PostBackUrl="~/Administration.aspx" />
 </asp:Content>

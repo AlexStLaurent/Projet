@@ -41,7 +41,8 @@
         </div>
         <div class="row"><div class="col-md-1"></div><div class="col-md-1"><asp:RadioButton ID="RadioUsagé" runat="server" Text="Usagé" GroupName="Etat"/></div></div>
     <div class="row">
-        <div class="col-md-1"><asp:Button ID="BtnValider" runat="server" Text="Valider" PostBackUrl="~/Administration.aspx"  /></div>
+        <div class="col-md-1"><asp:Button ID="BtnValider" runat="server" Text="Valider"/></div>
+        <div class="col-md-1"><asp:Button ID="BtnQuit" runat="server" Text="Retour" PostBackUrl="~/Administration.aspx" CausesValidation="false"/></div>
     </div>
         </div>
         

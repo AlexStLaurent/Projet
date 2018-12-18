@@ -35,7 +35,10 @@
             </div>
         <div class="row">
             <div class="col-md-1">
-                <asp:Button ID="BtnCreer" runat="server" Text="Créer" PostBackUrl="~/Connexion.aspx" />
+                <asp:Button ID="BtnCreer" runat="server" Text="Créer"/>
+            </div>
+             <div class="col-md-1">
+                <asp:Button ID="BtnQuit" runat="server" Text="Retour" PostBackUrl="~/Administration.aspx" CausesValidation="false"/>
             </div>
         </div>
     </div>
