@@ -43,7 +43,7 @@ namespace TATrouvaille
                 con.Close();
                 
             // Merci à Devan Shaw pour sa logique de Vérification.
-                verification = set.Tables[0].Rows.Count;
+                verification = set.Tables[0].Rows.Count; 
 
                 if (verification == 1)
                 {
