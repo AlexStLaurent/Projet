@@ -1,5 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TATrouvaille.Master" AutoEventWireup="true" CodeBehind="Connexion.aspx.cs" Inherits="TATrouvaille.Connexion" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        function OpenModal() {
+            $('mdlPass').modal('show');
+        }
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Form" runat="server">
 
@@ -60,7 +65,7 @@
                     <%-- ROW POUR LE BOUTTON DE CONNEXION --%>
                     <div class="row">
                         <div class="col-md-1">
-                            <asp:Button ID="BtnConnexion" runat="server" Text="Connexion" OnClick="BtnConnexion_Click" />
+                            <asp:Button ID="BtnConnexion" runat="server" Text="Connexion"  OnClick="BtnConnexion_Click" />
                         </div>
                     </div>
                     <%-- ROW POUR LE BOUTTON DE CONNEXION --%>
@@ -76,6 +81,19 @@
             </div>
             <%-- LA COLONNE POUR L'IMAGE --%>
             <%-- ####################### --%>
+        </div>
+    </div>
+    <div class="modal" id="mdlPass" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-body">
+                Le nom d'usager ou mot de passe entré n'est pas valide.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>            
+
+            </div>
+                
+                
         </div>
     </div>
 </asp:Content>

@@ -14,6 +14,7 @@ namespace TATrouvaille
 {
     public partial class Connexion : System.Web.UI.Page
     { 
+        
         string user;
         string mdp;
         int verification;
@@ -51,8 +52,7 @@ namespace TATrouvaille
                 }
                 else
                 {
-                    
-                
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "OpenModal();", true);
                 }
 
 
