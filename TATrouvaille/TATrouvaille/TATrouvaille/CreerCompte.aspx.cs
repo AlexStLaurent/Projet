@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace TATrouvaille
 {
@@ -12,6 +13,18 @@ namespace TATrouvaille
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void BtnCreer_Click(object sender, EventArgs e)
+        {
+            if (TxtPass.Text == TxtRePass.Text) {
+                SqlConnection con = new SqlConnection(@"Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql");
+                SqlCommand cmd = new SqlCommand($"INSERT INTO Inventaire VALUES ('{TxtUser.Text}', '{TxtPass}'", con);
+                cmd.Connection.Open();
+                cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+                Response.Redirect("Administration.aspx");
+            }
         }
     }
 }
