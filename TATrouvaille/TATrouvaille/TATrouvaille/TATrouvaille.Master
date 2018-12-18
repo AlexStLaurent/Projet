@@ -1,6 +1,9 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TATrouvaille.master.cs" Inherits="TATrouvaille.TATrouvaille" %>
 
 
+    <%-- ################################################################################################################################################## --%>
+    <%-- ############################################################      LA PAGE MAITRE      ############################################################ --%>
+    <%-- ################################################################################################################################################## --%>
 
 
 <!DOCTYPE html>
@@ -10,103 +13,107 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="X-UA-Compatible" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="text/html; charset=utf-8" />
     <title>T.A. Trouvaille</title>
+    <%-- ############################## --%>
+    <%-- PARTIE CSS POUR LA PAGE MAITRE --%>
     <style>
         body {
             background-image: url(http://3.imimg.com/data3/YF/TN/MY-3617268/untitled-2-500x500.jpg)
-}
+        }
 
 
 
 
-.h1{
-    font-weight: bolder;
-}
-.h4{
-    font-weight: bolder;
-}
+        .h1 {
+            font-weight: bolder;
+        }
+
+        .h4 {
+            font-weight: bolder;
+        }
 
 
 
-.row{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
+        .row {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
 
 
-.Text{
-    font-weight: bolder;
-    padding-left: 20px;
-}
+        .Text {
+            font-weight: bolder;
+            padding-left: 20px;
+        }
 
 
-footer{
-      
-     padding-top:5px;
-    background-color: black;
-    border: 1px solid mediumseagreen ;
-    color: white;
-    padding-left: 160px;
-}
-/*Cette section de code à été trouver sur:  https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+        footer {
+            padding-top: 5px;
+            background-color: black;        
+            color: white;
+            padding-left: 160px;
+        }
+        /*Cette section de code à été trouver sur:  https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
 
 
-.footer,
-.push {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
- /*          */
- form {
-    padding-left: 160px;
-}
-nav{
-     padding-top:5px;
-    background-color: darkblue;
-    border: 1px solid #ffae42;
-    color: white;
-    position: sticky;
-    top : 0;
-}
+        .footer,
+        .push {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /*          */
+        form {
+            padding-left: 160px;
+        }
 
-.hover:hover{
-   background-color:forestgreen;
-   overflow:hidden;
-}
+        nav {
+            padding-top: 5px;
+            background-color: darkblue;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
 
-.colh{
-    height:100%;
-    text-align:center;
-    padding-top: 40px;
-}
+        .hover:hover {
+            background-color: forestgreen;
+            overflow: hidden;
+        }
 
-.container{
-     margin-bottom: 15px;
-     padding-top:5px;
-    padding-bottom: 5px;
-    
-}
+        .colh {
+            height: 100%;
+            text-align: center;
+            padding-top: 40px;
+        }
 
-.hover{
-    color:whitesmoke
-}
+        .container {
+            margin-bottom: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;          
+        }
 
-.sidenav{
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    background-color: orange;
-}
+        .hover {
+            color: whitesmoke
+        }
 
-.block-link {
-    display:block;
-}
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            background-color: orange;
+        }
+
+        .block-link {
+            display: block;
+        }
+    </style> 
+    <%-- PARTIE CSS POUR LA PAGE MAITRE --%>
+    <%-- ############################## --%>
 
 
-    </style>    <link target=_blank href="css/bootstrap.min.css" rel="stylesheet" />
-   
+
+    <link target="_blank" href="css/bootstrap.min.css" rel="stylesheet" />
+
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/popper-utils.min.js"></script>
     <script src="Scripts/jquery-3.0.0.min.js"></script>
@@ -117,84 +124,91 @@ nav{
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
+
+
+    <%-- ############################### --%>
+    <%-- PARTIE HTML POUR LA PAGE MAITRE --%>
 <body>
     <div class="wrapper">
-     <nav class="nav" id="nav">
-         <div class="row">
-             <div class="col-md-1">
-                 <a>             
-                     <img src="Image/TATrouvaille.jpg" width="155" height="100" />    
-                 </a>
-                     
-                 
-             </div>
-      
+    <%-- ###################### --%>
+    <%-- LA BARRE DE NAVIGATION --%>
+        <nav class="nav" id="nav">
+            <div class="row">
+                <div class="col-md-1">
+                    <a>
+                        <img src="Image/TATrouvaille.png" width="90" height="90" />
+                    </a>
+                </div>
                 <a class="col-md-1 block-link colh" href="Accueil.aspx">
                     <div class="hover">
-                    Accueil    
+                        Accueil    
                     </div>
                 </a>
                 <a class="col-md-1 block-link colh" href="Connexion.aspx">
                     <div class="hover">
-                    Administration
-                        </div>
+                        Administration
+                    </div>
                 </a>
                 <a class="col-md-1 block-link colh" href="RechercheLivre.aspx">
-                  <div class="hover">
-                    Recherche 
-                      </div>
-                </a>       
-             <a class="col-md-1 block-link colh" href="LivreChercher.aspx">
-                 <div class="hover">
-                 Nous recherchons
-                     </div>
-             </a>
-
-
-
+                    <div class="hover">
+                        Recherche 
+                    </div>
+                </a>
+                <a class="col-md-1 block-link colh" href="LivreChercher.aspx">
+                    <div class="hover">
+                        Nous recherchons
+                    </div>
+                </a>
             </div>
+        </nav>
+        <%-- LA BARRE DE NAVIGATION --%>
+        <%-- ###################### --%>
 
 
 
-
-    </nav>
-
-
-
-
+        <%-- ################ --%>
+        <%-- LA BARRE DE CÔTÉ --%>
         <div class="sidenav">
-
-
-
-
-
-
-
-
         </div>
-    <form id="form1" runat="server">
-        <div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-            <script src="bootstrap/js/bootstrap.min.js"></script>
-            <asp:ContentPlaceHolder ID="Form" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
+        <%-- LA BARRE DE CÔTÉ --%>
+        <%-- ################ --%>
+
+
+        <form id="form1" runat="server">
+            <div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <script src="bootstrap/js/bootstrap.min.js"></script>
+                <%-- ################################# --%>
+                <%-- EMPLACEMENT DU CONTENUE DES PAGES --%>
+                <asp:ContentPlaceHolder ID="Form" runat="server">
+                </asp:ContentPlaceHolder>
+                <%-- EMPLACEMENT DU CONTENUE DES PAGES --%>
+                <%-- ################################# --%>
+            </div>
+        </form>
+
+
+        <%-- ############### --%>
+        <%-- LA BARRE DU BAS --%>
         <div class="push">
             <footer class="footer">
-                 <div class="row">
-                  
-            <div class="col-md-2">Heure d'ouverture :  9 h 00 à 15 h 00.</div>
+                <div class="row">
 
-            <div class="col-md-2"> Ouvert les : Lundi au Vendredi.</div>
+                    <div class="col-md-2">Heure d'ouverture :  9 h 00 à 15 h 00.</div>
 
-            <div class="col-md-3">Adresse: 333, Boul. Cité-des-Jeunes, J8Y 6M4.</div>
+                    <div class="col-md-2">Ouvert du lundi au vendredi.</div>
 
-            <div class="col-md-3"> Retrouvez-nous au : deuxième étage, dans la section verte.</div>
+                    <div class="col-md-3">Adresse: 333, Boul. Cité-des-Jeunes, J8Y 6M4.</div>
 
-                 </div>
+                    <div class="col-md-3">Retrouvez-nous au deuxième étage dans la section verte.</div>
+
+                </div>
             </footer>
-         </div>
+        </div>
+        <%-- LA BARRE DU BAS --%>
+        <%-- ############### --%>
     </div>
 </body>
+    <%-- PARTIE HTML POUR LA PAGE MAITRE --%>
+    <%-- ############################### --%>
 </html>

@@ -3,20 +3,32 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Form" runat="server">
     
-    <div class="row">
 
-        <div class="Text">    
-            <div class="col-md-3"­></div>
-        <div class="col-md-8" style="font-weight: 100; font-size: larger">
-            <h3 class="colh">Bienvenue sur le site de TA Trouvaille, le service de vente et rachat de livre usagé</h3>
+    <%-- ################################################################################################################################################## --%>
+    <%-- ############################################################      PAGE D'ACCUEIL      ############################################################ --%>
+    <%-- ################################################################################################################################################## --%>
+
+    <%-- ############################ --%>
+    <%-- ROW POUR LE TITRE DE LA PAGE --%>
+    <div class="row" style="text-align:center;">
+        <div class="Text">                
+            <div class="col-md-12">
+                <h3 class="colh" style="color:forestgreen;">Bienvenue sur le site de TA Trouvaille, le service de vente et de rachat de livres usagés</h3>
+            </div>
         </div>
     </div>
-</div>
-    <div class="row" >
-        <div class="col-md-3"></div>
-        <div  class="col-md-3">
-            <img src="Image/pageAccueil.jpg" />
-                </div>
-    </div>
+    <%-- ROW POUR LE TITRE DE LA PAGE --%>
+    <%-- ############################ --%>
 
+
+
+    <%-- ################ --%>
+    <%-- ROW POUR L'IMAGE --%>
+    <div class="row" style="text-align:center;">   
+        <div  class="col-md-12">
+            <img src="Image/pageAccueil.jpg" />
+        </div>
+    </div>
+    <%-- ROW POUR L'IMAGE --%>
+    <%-- ################ --%>
 </asp:Content>
