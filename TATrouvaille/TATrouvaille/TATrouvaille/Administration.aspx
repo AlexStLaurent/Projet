@@ -24,8 +24,14 @@
             <div class="col-md-1">
                 <asp:Button ID="BtnAjoutLivreRecherche" runat="server" Text="Ajouter un livre recherché" PostBackUrl="~/AjoutLivreRecherché.aspx" Width="200px" />
             </div>
+         </div>
+        <div class="row">
+                <div class="col-md-1">
+                    <asp:Button ID="GestionRéserv" runat="server" Text="Gérer les réservations" PostBackUrl="~/GestionRéservation.aspx" Width="200px" />
+                  </div>
+           </div>
         </div>      
-    </div>    
+       
         
 
 

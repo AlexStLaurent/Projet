@@ -26,7 +26,7 @@ namespace TATrouvaille
                 TitreLivre = TxtTitrerecherche.Text;
                 SqlConnection con = new SqlConnection(@"Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql");
                 con.Open();
-                SqlCommand cmd = new SqlCommand($"SELECT IDLivre, Titre, Auteur, Prix FROM Inventaire WHERE Titre = '{RechercheLivre.TitreLivre}' ", con);
+                SqlCommand cmd = new SqlCommand($"SELECT IDLivre, Titre, Auteur, Prix FROM Inventaire WHERE Titre = '{RechercheLivre.TitreLivre}' AND EstReserver = 0 ", con);
                 SqlDataReader reader = cmd.ExecuteReader();
                 grvResultat.DataSource = reader;
                 grvResultat.DataBind();

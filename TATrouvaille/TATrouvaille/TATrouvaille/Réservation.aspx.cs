@@ -12,6 +12,10 @@ namespace TATrouvaille
 {
     public partial class Réservation : System.Web.UI.Page
     {
+        string prenom;
+        string Nom;
+        string numetud;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             LblLivre.Text = RechercheLivre.TitreLivre;
@@ -21,13 +25,18 @@ namespace TATrouvaille
         {
             if (Page.IsValid)
             {
-                SqlConnection con = new SqlConnection(@"Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql");
-                SqlCommand cmd = new SqlCommand($"INSERT INTO Reservation VALUES ({RechercheLivre.Index}, '{TxtNomReserv.Text}', '{TxtPrenomReserv.Text}', current_timestamp, DATEADD(day,2, current_timestamp)"); //Code trouver sur https://stackoverflow.com/questions/19925400/add-2-weeks-to-a-date-sql
-                cmd = new SqlCommand($"UPDATE Inventaire SET EstReserver = 1 WHERE IDLivre = {RechercheLivre.Index} ");
+                Nom = TxtNomReserv.Text;
+                prenom = TxtPrenomReserv.Text;
+                numetud = TxtNumEtudReserv.Text;
+                SqlConnection con = new SqlConnection("Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql");
+                SqlCommand cmd = new SqlCommand($"INSERT INTO Reservation VALUES ({RechercheLivre.Index}, '{RechercheLivre.TitreLivre}', '{Nom}', '{prenom}', '{numetud}', CAST(GETDATE() as Date), DATEADD(day,2, GETDATE()))", con); //Code trouver sur https://stackoverflow.com/questions/19925400/add-2-weeks-to-a-date-sql
                 cmd.Connection.Open();
+                cmd.ExecuteNonQuery();
+                cmd = new SqlCommand($"UPDATE Inventaire SET EstReserver = 1 WHERE IDLivre = {RechercheLivre.Index} ", con);
                 cmd.ExecuteNonQuery();
                 cmd.Connection.Close();
                 con.Close();
+                Response.Redirect("Accueil.aspx");
             }
         }
     }

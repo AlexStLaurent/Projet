@@ -43,5 +43,9 @@ Insert INTO LivreRechercher VALUES
 ('Apprendre le Javascript en 5 étape facile', 'Samir Elouasbi')
 
 INSERT INTO Inventaire VALUES
-('Comme un Badass', 'Mister Torgue Flexington', 66.66, NULL)
+('Comme un Badass', 'Mister Torgue Flexington', 66.66, 0)
 
+USE NORTHWND
+GO
+DROP DATABASE TATrouvaille
+GO
