@@ -850,4 +850,5 @@ C:\Users\ToTo\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj
 C:\Users\ToTo\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.csproj.CoreCompileInputs.cache
 C:\Users\ToTo\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.dll
 C:\Users\ToTo\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.pdb
-C:\Users\info1\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.csprojResolveAssemblyReference.cache
+C:\Users\info1\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.csprojAssemblyReference.cache
+C:\Users\info1\Documents\GitHub\Projet\TATrouvaille\TATrouvaille\TATrouvaille\obj\Debug\TATrouvaille.csproj.CopyComplete

@@ -116,6 +116,8 @@
     <Content Include="css\bootstrap-reboot.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="GestionInventaire.aspx" />
+    <Content Include="GestionListe.aspx" />
     <Content Include="GestionRéservation.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Image\TATrouvaille.jpg" />
@@ -188,6 +190,20 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="GestionInventaire.aspx.cs">
+      <DependentUpon>GestionInventaire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionInventaire.aspx.designer.cs">
+      <DependentUpon>GestionInventaire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionListe.aspx.cs">
+      <DependentUpon>GestionListe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionListe.aspx.designer.cs">
+      <DependentUpon>GestionListe.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GestionRéservation.aspx.cs">
       <DependentUpon>GestionRéservation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

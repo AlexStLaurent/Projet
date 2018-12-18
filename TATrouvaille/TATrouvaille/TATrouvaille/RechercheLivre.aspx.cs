@@ -12,6 +12,8 @@ namespace TATrouvaille
     public partial class RechercheLivre : System.Web.UI.Page
     {
         public static string TitreLivre;
+        public static string Auteur;
+        public static float Prix;
         public static int Index;
         protected void Page_Load(object sender, EventArgs e)
         {

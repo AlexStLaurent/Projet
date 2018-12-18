@@ -37,15 +37,15 @@ INSERT INTO Administrateur VALUES
 ('Admin', 'Admin')
 
 Insert INTO LivreRechercher VALUES
-('Les dix petits nègres', 'Agathe Christie'),
-('Mein Kampf', 'Adolph Hitler'), 
+('The Golden Compass', 'Phillip Pullman'),
+('Harry Potter et la pierre philosophale','J.K. Rowling'), 
 ('Tom à la ferme', 'Some guy'),
 ('Apprendre le Javascript en 5 étape facile', 'Samir Elouasbi')
 
 INSERT INTO Inventaire VALUES
 ('Comme un Badass', 'Mister Torgue Flexington', 66.66, 0)
 
-USE NORTHWND
-GO
-DROP DATABASE TATrouvaille
-GO
+--USE NORTHWND
+--GO
+--DROP DATABASE TATrouvaille
+--GO

@@ -59,6 +59,17 @@
                     <%-- ############################################## --%>
 
 
+                    <div class="row">
+                        <div class="col-md-1">
+                            <asp:Button ID="btnGestionInv" runat="server" Text="Gérer l'inventaire" PostBackUrl="~/GestionInventaire.aspx" Width="200px" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1">
+                            <asp:Button ID="btnGestionListe" runat="server" Text="Gérer la liste rechercher" PostBackUrl="~/GestionListe.aspx" Width="200px" />
+                        </div>
+                    </div>
 
                     <%-- ######################################### --%>
                     <%-- ROW POUR LE BOUTTON GÉRER LES RÉSERVATION --%>

@@ -15,8 +15,7 @@ namespace TATrouvaille
         public int IndexLivreGestion;
         public int ReservIndex;
         public string TitreGestion;
-        SqlDataAdapter adapter;
-
+        
 
 
         protected void Page_Load(object sender, EventArgs e)
