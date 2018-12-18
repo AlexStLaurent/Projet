@@ -31,7 +31,7 @@ namespace TATrouvaille
                 prenom = TxtPrenomReserv.Text;
                 numetud = TxtNumEtudReserv.Text;
                 SqlConnection con = new SqlConnection("Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql");
-                SqlCommand cmd = new SqlCommand($"INSERT INTO Reservation VALUES ({RechercheLivre.Index}, '{RechercheLivre.TitreLivre}', '{Nom}', '{prenom}', '{numetud}', CAST(GETDATE() as Date), DATEADD(day,2, GETDATE()))", con); //Code trouver sur https://stackoverflow.com/questions/19925400/add-2-weeks-to-a-date-sql
+                SqlCommand cmd = new SqlCommand($"INSERT INTO Reservation VALUES ({RechercheLivre.Index}, '{RechercheLivre.TitreLivre}', '{Nom}', '{prenom}', '{numetud}', CAST(GETDATE() as Date), DATEADD(day,2, CAST(GETDATE() as Date)))", con); //Code trouver sur https://stackoverflow.com/questions/19925400/add-2-weeks-to-a-date-sql
                 cmd.Connection.Open();
                 cmd.ExecuteNonQuery();
                 cmd = new SqlCommand($"UPDATE Inventaire SET EstReserver = 1 WHERE IDLivre = {RechercheLivre.Index} ", con);

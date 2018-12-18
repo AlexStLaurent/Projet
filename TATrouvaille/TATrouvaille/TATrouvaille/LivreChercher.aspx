@@ -10,6 +10,7 @@
 
     <%-- ##################### --%>
     <%-- ROW POUR LE GRID VIEW --%>
+    <div class="container">
     <div class="row">
         <div class="col-md-2"­></div>
         <div>
@@ -25,6 +26,7 @@
             <%-- ########################################### --%>
         </div>
      </div>
+    </div>
     <%-- ROW POUR LE GRID VIEW --%>
     <%-- ##################### --%>
 </asp:Content>

@@ -11,7 +11,7 @@ CREATE TABLE Inventaire(
 IDLivre INT PRIMARY KEY IDENTITY,
 Titre varchar(50),
 Auteur varchar(50),
-Prix money,
+Prix money(3,2),
 EstReserver bit
 )
 

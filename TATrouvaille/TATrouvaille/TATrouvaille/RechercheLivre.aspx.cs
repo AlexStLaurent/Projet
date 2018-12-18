@@ -28,7 +28,7 @@ namespace TATrouvaille
                 TitreLivre = TxtTitrerecherche.Text;
                 SqlConnection con = new SqlConnection(@"Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql");
                 con.Open();
-                SqlCommand cmd = new SqlCommand($"SELECT IDLivre, Titre, Auteur, Prix FROM Inventaire WHERE Titre = '{RechercheLivre.TitreLivre}' AND EstReserver = 0 ", con);
+                SqlCommand cmd = new SqlCommand($"SELECT IDLivre, Titre, Auteur, Prix FROM Inventaire WHERE Titre LIKE '{RechercheLivre.TitreLivre}%' AND EstReserver = 0 ", con);
                 SqlDataReader reader = cmd.ExecuteReader();
                 grvResultat.DataSource = reader;
                 grvResultat.DataBind();
@@ -39,6 +39,7 @@ namespace TATrouvaille
         protected void grvResultat_SelectedIndexChanged(object sender, EventArgs e)
         {
             Index = Int32.Parse(grvResultat.SelectedRow.Cells[0].Text);
+            TitreLivre = grvResultat.SelectedRow.Cells[1].Text;
             Auteur = grvResultat.SelectedRow.Cells[2].Text;
             Prix = float.Parse(grvResultat.SelectedRow.Cells[3].Text);
             Response.Redirect("Réservation.aspx");

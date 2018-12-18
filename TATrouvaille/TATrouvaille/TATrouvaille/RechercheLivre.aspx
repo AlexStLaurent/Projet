@@ -40,16 +40,20 @@
         <%-- ROW POUR LE BOUTTON DE RECHERCHE--%>
         <div class="row">
             <div class="col-md-1">
-                <asp:Button ID="BtnRecherche" runat="server" Text="Rechercher" OnClick="BtnRecherche_Click" /></div>
+                <asp:Button ID="BtnRecherche" runat="server" Text="Rechercher" OnClick="BtnRecherche_Click" />
+            </div>
         </div>
         <%-- ROW POUR LE BOUTTON DE RECHERCHE--%>
         <%-- ############################### --%>
-    </div>
+    
 
     
-     <div­>
+     
          <%-- #################################### --%>
          <%-- LE GRID VIEW DE LA RECHERCHE DE LIVRE--%>
+         <div class="row">
+             
+             <div>
          <asp:GridView ShowHeaderWhenEmpty="true" ID="grvResultat" runat="server" AutoGenerateColumns="False" Width="600px" OnSelectedIndexChanged="grvResultat_SelectedIndexChanged">
              <Columns>
                  <asp:BoundField HeaderText="ID du livre" DataField="IDLivre" ReadOnly="true" />
@@ -59,6 +63,8 @@
                  <asp:ButtonField CommandName="Select" HeaderText="Reservation" ShowHeader="True" Text="Réserver" />
              </Columns>
          </asp:GridView>
+            </div>
+             </div>
          <%-- LE GRID VIEW DE LA RECHERCHE DE LIVRE--%>
          <%-- #################################### --%>
     </div>
