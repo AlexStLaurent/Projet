@@ -15,7 +15,7 @@ namespace TATrouvaille
 
         }
 
-        protected void BtnCreer_Click(object sender, EventArgs e)
+        protected void BtnCreer_Click(object sender, EventArgs e) //Prend les valeurs entré dans les textbox pour crée un nouvel Administrateur
         {
             if (TxtPass.Text == TxtRePass.Text) {
                 SqlConnection con = new SqlConnection(@"Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql");

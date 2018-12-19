@@ -12,7 +12,7 @@ namespace TATrouvaille
 {
     public partial class LivreChercher : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e) //Popule un gridview avec les données de la table Livre Rechercher
         {
             SqlConnection con = new SqlConnection(@"Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql");
             SqlCommand cmd = new SqlCommand("SELECT Titre, Auteur FROM LivreRechercher", con);

@@ -5,6 +5,7 @@
     <div class="container">
     <div class="row">
         <div class="col-md-2"></div><h1>Opération effectué avec succès!</h1>
+        <%--Page de confirmation de succès des opération--%>
     </div>
         </div>
 </asp:Content>

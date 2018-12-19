@@ -18,7 +18,7 @@ namespace TATrouvaille
 
         }
 
-        protected void BtnAjout_Click(object sender, EventArgs e)
+        protected void BtnAjout_Click(object sender, EventArgs e) //Fonction permettant d'ajouter des livre dans la liste de livre recherché
         {
             titre = TxtTitreRecherche.Text; //Assigne le texte de la textbox txtTitreRecherche à la variable titre
             auteur = TxtAuteurRecherche.Text; //de même avec la variable auteur

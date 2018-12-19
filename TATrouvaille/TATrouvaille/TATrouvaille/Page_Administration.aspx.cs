@@ -15,7 +15,7 @@ namespace TATrouvaille
 
         }
 
-        protected void BtnValider_Click(object sender, EventArgs e)
+        protected void BtnValider_Click(object sender, EventArgs e) //événement servant à inséré des livres dans l'inventaire.
         {
             SqlConnection con = new SqlConnection(@"Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql");
             SqlCommand cmd = new SqlCommand($"INSERT INTO Inventaire VALUES ('{TxtTitre.Text}', '{TxtAuteur.Text}', '{TxtPrix.Text}', 0)", con);

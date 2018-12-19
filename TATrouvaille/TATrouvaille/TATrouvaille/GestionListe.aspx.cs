@@ -10,7 +10,7 @@ namespace TATrouvaille
 {
     public partial class GestionListe : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e) // Popule le Gridview avec les informations de LivreRechercher
         {
             SqlConnection con = new SqlConnection(@"Data Source=.; Initial Catalog = TATrouvaille; User ID=sa;Password=sql");
             SqlCommand cmd = new SqlCommand("SELECT * FROM LivreRechercher", con);
@@ -22,7 +22,7 @@ namespace TATrouvaille
             reader.Close();
         }
 
-        protected void grvListe_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void grvListe_RowCommand(object sender, GridViewCommandEventArgs e) //Crée une commande qui lance une commande Delete dans la base de donnée
         {
             int SelectedRow;
             if (e.CommandName == "Delete")
@@ -39,14 +39,11 @@ namespace TATrouvaille
             }
         }
 
-        protected void grvListe_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        protected void grvListe_RowDeleting(object sender, GridViewDeleteEventArgs e) //Crée une handler vide pour géré la commande Deleting. Sans cela, le site plantera durant la destruction de donnée
         {
 
         }
 
-        protected void grvListe_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

@@ -59,7 +59,7 @@
                  <asp:BoundField HeaderText="ID du livre" DataField="IDLivre" ReadOnly="true" />
                  <asp:BoundField HeaderText="Titre" DataField="Titre" ReadOnly="True" />
                  <asp:BoundField HeaderText="Auteur" DataField="Auteur" ReadOnly="True" />
-                 <asp:BoundField HeaderText="Prix" DataField="Prix" ReadOnly="True" />
+                 <asp:BoundField HeaderText="Prix" DataField="Prix" DataFormatString="{0:0.00}" ReadOnly="True" />
                  <asp:ButtonField CommandName="Select" HeaderText="Reservation" ShowHeader="True" Text="Réserver" />
              </Columns>
          </asp:GridView>

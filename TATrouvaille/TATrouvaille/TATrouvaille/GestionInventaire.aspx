@@ -6,12 +6,12 @@
         <div class="row">
                
             <div>
-    <asp:GridView runat="server" ID="grvInventaire" AutoGenerateColumns="false" width="600px" OnSelectedIndexChanged="grvInventaire_SelectedIndexChanged" OnRowCommand="grvInventaire_RowCommand" OnRowDeleting="grvInventaire_RowDeleting">
+    <asp:GridView runat="server" ID="grvInventaire" AutoGenerateColumns="false" width="600px" OnRowCommand="grvInventaire_RowCommand" OnRowDeleting="grvInventaire_RowDeleting">
         <Columns>
             <asp:BoundField HeaderText="# de livre" DataField="IDLivre" ReadOnly="true" />
             <asp:BoundField HeaderText="Titre du livre" DataField="Titre" ReadOnly="true" />
             <asp:BoundField HeaderText="Auteur" DataField="Auteur" ReadOnly="true" />
-            <asp:BoundField HeaderText="Prix" ReadOnly="true" DataFormatString="{0.00}" DataField="Prix" HtmlEncode="false" />
+            <asp:BoundField HeaderText="Prix" ReadOnly="true" DataFormatString="{0:0.00}" DataField="Prix" />
             <asp:ButtonField CommandName="Delete" HeaderText="" CausesValidation="false" ShowHeader="false" Text="Enlever de l'inventaire" />
         </Columns>
     </asp:GridView>

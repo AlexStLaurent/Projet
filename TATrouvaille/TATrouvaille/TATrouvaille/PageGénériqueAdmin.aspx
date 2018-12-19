@@ -6,6 +6,7 @@
     <div class="row">
         <div class="col-md-2"></div><h1>Opération effectué avec succès!</h1>
     </div>
+        <%--Page de confirmation de succès des opération--%>
         <div class="row">
             <asp:Button runat="server" ID="btnRetour" Text="Retour à l'administration" PostBackUrl="~/Administration.aspx" />
         </div>

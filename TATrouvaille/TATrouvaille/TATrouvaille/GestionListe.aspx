@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Form" runat="server">
     <div class="container">
-        <asp:GridView runat="server" CellPadding="5" ID="grvListe" AutoGenerateColumns="false" OnSelectedIndexChanged="grvListe_SelectedIndexChanged" Width="600px" OnRowCommand="grvListe_RowCommand" OnRowDeleting="grvListe_RowDeleting">
+        <asp:GridView runat="server" CellPadding="5" ID="grvListe" AutoGenerateColumns="false" Width="600px" OnRowCommand="grvListe_RowCommand" OnRowDeleting="grvListe_RowDeleting">
         <Columns>
             <asp:BoundField HeaderText="Titre du livre" DataField="Titre" ReadOnly="true" />
             <asp:BoundField HeaderText="Auteur" DataField="Auteur" ReadOnly="true" />

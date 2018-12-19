@@ -12,7 +12,7 @@
     <%-- ########################## --%>
     <%-- GRID VIEW DES RÉSERVATIONS --%>
     <div class="container">
-    <asp:GridView runat="server" ID="gdvGestion" OnSelectedIndexChanged="gdvGestion_SelectedIndexChanged" AutoGenerateColumns="false" Width="600px" OnRowCommand="gdvGestion_RowCommand" OnRowDeleting="gdvGestion_RowDeleting" OnRowUpdating="gdvGestion_RowUpdating">
+    <asp:GridView runat="server" ID="gdvGestion" AutoGenerateColumns="false" Width="600px" OnRowCommand="gdvGestion_RowCommand" OnRowDeleting="gdvGestion_RowDeleting" OnRowUpdating="gdvGestion_RowUpdating">
         <Columns>
             <asp:BoundField HeaderText="# de réservation" DataField="ReservID" ReadOnly="true" />
             <asp:BoundField HeaderText="# de livre" DataField="IDLivre" ReadOnly="true" />
@@ -20,7 +20,7 @@
             <asp:BoundField HeaderText="Nom" DataField="Nom" ReadOnly="true" />
             <asp:BoundField HeaderText="Prénom" DataField="Prenom" ReadOnly="true" />
             <asp:BoundField HeaderText="# Étudiant" DataField="NumEtudiant" ReadOnly="true" />
-            <asp:BoundField HeaderText="Échéance" DataField="DateFinReserv" ReadOnly="true" />
+            <asp:BoundField HeaderText="Échéance" DataField="DateFinReserv" DataFormatString="{0:yyyy/mm/dd}" ReadOnly="true" />
             <asp:ButtonField  CommandName="Update" HeaderText="" ShowHeader="false" Text="Annuler Réservation" />
             <asp:ButtonField CommandName="Delete" HeaderText="" CausesValidation="false" ShowHeader="false" Text="Terminer réservation" />
         </Columns>
