@@ -43,7 +43,7 @@ Insert INTO LivreRechercher VALUES
 ('Apprendre le Javascript en 5 étape facile', 'Samir Elouasbi')
 
 INSERT INTO Inventaire VALUES
-('Le C# pour les nuls', 'Hasna Hocini', 39, 0)
+('Le C# pour les nuls', 'Hasna Hocini', 39.00, 0)
 
 --USE NORTHWND
 --GO

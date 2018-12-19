@@ -11,7 +11,7 @@
             <asp:BoundField HeaderText="# de livre" DataField="IDLivre" ReadOnly="true" />
             <asp:BoundField HeaderText="Titre du livre" DataField="Titre" ReadOnly="true" />
             <asp:BoundField HeaderText="Auteur" DataField="Auteur" ReadOnly="true" />
-            <asp:BoundField HeaderText="Prix" ReadOnly="true" DataField="Prix" />
+            <asp:BoundField HeaderText="Prix" ReadOnly="true" DataFormatString="{0.00}" DataField="Prix" HtmlEncode="false" />
             <asp:ButtonField CommandName="Delete" HeaderText="" CausesValidation="false" ShowHeader="false" Text="Enlever de l'inventaire" />
         </Columns>
     </asp:GridView>

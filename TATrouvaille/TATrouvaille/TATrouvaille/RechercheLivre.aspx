@@ -28,7 +28,7 @@
         <div class="row">
             <div class="col-md-1">Titre</div>
             <div class="col-md-1">
-                <asp:TextBox ID="TxtTitrerecherche" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TxtTitrerecherche" runat="server" Width="500px"></asp:TextBox>
             </div>
         </div>
         <%-- ROW POUR LE TITRE DU LIVRE--%>
